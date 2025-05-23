@@ -76,7 +76,7 @@ hr {
 }
 
 .logo {
-  max-width: 50px; /* Tamanho ajustável conforme necessidade */
+  max-width: 15px; /* Tamanho ajustável conforme necessidade */
   margin: 0 auto 1rem auto; /* Centraliza o logo */
   display: block; /* Permite o uso de margem automática */
 }
