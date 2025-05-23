@@ -75,6 +75,18 @@ hr {
   margin: 1.5rem 0;
 }
 
+.logo {
+  max-width: 50px; /* Tamanho ajustável conforme necessidade */
+  margin: 0 auto 1rem auto; /* Centraliza o logo */
+  display: block; /* Permite o uso de margem automática */
+}
+
+.profile-header {
+  margin-bottom: 1.5rem;
+  position: relative; /* Mantém a hierarquia do elemento */
+}
+
+
 .branding p {
   margin: 0.5rem 0;
   font-size: 0.9rem;
