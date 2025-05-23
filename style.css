@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+  background: #F8F8F8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,13 +9,20 @@ body {
 }
 
 .container {
-  background: white;
+  background: #FFFFFF;
   text-align: center;
   padding: 2rem;
   border-radius: 12px;
   width: 90%;
   max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto 1rem auto;
+  display: block;
 }
 
 .profile-header {
@@ -23,71 +30,70 @@ body {
 }
 
 h1 {
-  font-size: 1.8rem;
-  color: #2d3436;
-  margin: 0 0 0.25rem 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #2A5C45;
+  margin: 0.5rem 0;
+  line-height: 1.1;
 }
 
-h2 {
-  font-size: 1.1rem;
-  color: #636e72;
-  font-weight: 400;
-  margin: 0;
+.title-line {
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  color: #4A7563;
+  margin-top: -0.3rem;
 }
 
 .highlight {
-  background: #f8f9fa;
+  background: #F4F4F4;
   padding: 1rem;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   border-radius: 8px;
-  font-weight: 600;
-  color: #2d3436;
+  font-weight: 500;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 2rem 0;
 }
 
 .link-btn {
   text-decoration: none;
-  color: #2d3436;
+  color: #2A5C45;
   padding: 1rem;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #E0E0E0;
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s ease;
+  background: #FFFFFF;
 }
 
 .link-btn:hover {
-  background: #f8f9fa;
-  border-color: #2d3436;
+  border-color: #FF6B35;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,107,53,0.15);
 }
 
 .branding {
   margin-top: 2rem;
-  color: #636e72;
+  color: #888;
+  font-size: 0.9rem;
 }
 
 hr {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #EEE;
   margin: 1.5rem 0;
 }
 
-.logo {
-  max-width: 40px; /* Tamanho ajustável conforme necessidade */
-  margin: 0 auto 1rem auto; /* Centraliza o logo */
-  display: block; /* Permite o uso de margem automática */
-}
-
-.profile-header {
-  margin-bottom: 1.5rem;
-  position: relative; /* Mantém a hierarquia do elemento */
-}
-
-
 .branding p {
   margin: 0.5rem 0;
-  font-size: 0.9rem;
 }
