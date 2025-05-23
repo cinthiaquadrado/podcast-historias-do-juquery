@@ -1,40 +1,73 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 30px;
   margin: 0;
-}
-.container {
-  max-width: 600px;
-  margin: auto;
-  background-color: rgba(0,0,0,0.6);
-  border-radius: 20px;
-  padding: 20px;
-}
-.capa {
-  width: 150px;
-  border-radius: 10px;
-}
-h1 {
-  margin: 20px 0;
-  font-size: 28px;
-}
-.links {
+  font-family: 'Arial', sans-serif;
+  background-color: #e7e7d8; /* Bege claro */
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.btn {
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #fff;
-  transition: 0.3s;
+
+.container {
+  background-color: #e7e7d8;
+  text-align: center;
+  padding: 40px;
+  border-radius: 24px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-.btn.podcast { background: #4CAF50; }
-.btn.leitura { background: #3E8EDE; }
-.btn.curiosidade { background: #F39C12; }
-.btn:hover { opacity: 0.85; }
+
+h1 {
+  font-size: 1.2rem;
+  color: #3a3a3a;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #4d4d4d;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+img.cover {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 24px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #3a3a3a;
+}
+
+.timeline {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.wave {
+  width: 100%;
+  height: 50px;
+  background: url('waveform.png') no-repeat center;
+  background-size: contain;
+  margin: 16px 0;
+}
