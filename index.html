@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Histórias do Juquery</title>
-  <link rel="stylesheet" href="{{ url_for(filename='style.css') }}">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-image: url('imagens/fundo1.png'); background-size: cover;">
   <div class="container">
-    <img src="{{ url_for('static', filename='imagens/capa.png') }}" alt="Capa do podcast" class="capa">
+    <img src="imagens/capa.png" alt="Capa do podcast" class="capa">
     <h1>🎙️ Podcast<br>Histórias do Juquery</h1>
     <div class="links">
-      {% for link in links %}
-        <a href="{{ link.url }}" target="_blank" class="btn {{ link.tipo }}">{{ link.titulo }}</a>
-      {% endfor %}
+      <a href="https://open.spotify.com/episode/..." class="btn podcast" target="_blank">🎧 Ouça o episódio 1</a>
+      <a href="https://amzn.to/..." class="btn leitura" target="_blank">📖 Indicação de Leitura</a>
+      <a href="https://www.instagram.com/reel/DJ4EkGlRDEL/" class="btn curiosidade" target="_blank">📸 Curiosidades visuais</a>
     </div>
   </div>
 </body>
