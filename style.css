@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #E7D8C6; /* Bege natural suave */
+  background-color: #2A5C45;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   min-height: 100vh;
@@ -86,8 +86,8 @@ body {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
-  background-color: #FFFFFF;
-  color: #2A5C45; /* Verde floresta */
+  background-color: #2A5C45;
+  color: #ffffff;
   border: 2px solid #2A5C45;
   transition: all 0.3s ease;
 }
