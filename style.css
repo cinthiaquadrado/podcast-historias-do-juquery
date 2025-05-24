@@ -89,12 +89,17 @@ body {
   color: #4a7563;
   border: 1px solid #4a7563;
   transition: all 0.3s ease;
+  /* Novas propriedades para suavidade */
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .link-btn:hover {
-  background-color: #4a7563;
+  background-color: rgba(74, 117, 99, 0.9); /* 90% de opacidade */
   color: #FFFFFF;
   transform: translateY(-2px);
+  opacity: 1; /* Volta à opacidade total no hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Rodapé institucional */
