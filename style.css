@@ -21,7 +21,7 @@ body {
   align-items: center;
   max-width: 600px;
   width: 90%;
-  padding-top: 100px;
+  padding-top: 80px; /* Reduzi o espaço */
   position: relative;
 }
 
@@ -29,7 +29,11 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
+  background-color: #f6f4f2;
+  padding: 10px;
+  border-radius: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -37,14 +41,13 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .profile-header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   color: #2d2d2d;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .title-line {
@@ -69,18 +72,34 @@ body {
   gap: 15px;
 }
 
-.link-btn {
-  text-decoration: none;
+/* Botão principal com destaque */
+.link-btn:first-child {
   background-color: #5b2a86;
   color: #fff;
+  font-weight: 600;
+}
+
+/* Todos os botões com hover sutil */
+.link-btn {
+  text-decoration: none;
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
-  transition: background-color 0.3s;
+  background-color: #ffffff;
+  color: #5b2a86;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
 }
 
 .link-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+  color: #442060;
+}
+
+.link-btn:first-child:hover {
   background-color: #442060;
+  color: #fff;
 }
 
 .branding {
