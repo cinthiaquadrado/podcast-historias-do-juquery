@@ -85,15 +85,14 @@ body {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
-  background-color: #4a7563;
-  color: #ffffff;
-  border: 2px solid #353d25;
+  background-color: #ffffff;
+  color: #4a7563;
+  border: 1px solid #4a7563;
   transition: all 0.3s ease;
 }
 
 .link-btn:hover {
-  background-color: #346e55; /* Terracota */
-  border-color: #B36A5E;
+  background-color: #4a7563;
   color: #FFFFFF;
   transform: translateY(-2px);
 }
