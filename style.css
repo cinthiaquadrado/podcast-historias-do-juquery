@@ -117,95 +117,83 @@ body {
   width: 60%;
 }
 
-/* Responsividade */
-@media (max-width: 480px) {
-  .profile-header h1 {
-    font-size: 2rem;
-  }
-  
-  .main-title {
-    font-size: 2.2rem;
-  }
-  
-  .logo-container {
-    width: 80px;
-    height: 80px;
-    top: -40px;
-  }
-  
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-}
-/* Ajustes para dispositivos muito pequenos (até 360px) */
+
+/* Ajuste final para telas muito pequenas (até 320px) */
 @media (max-width: 360px) {
   .container {
-    padding: 25px 15px 20px;
-    margin-top: 40px;
-    border-radius: 15px;
+    padding: 20px 12px 15px;
+    margin: 30px 0;
+    border-radius: 12px;
   }
 
   .profile-header h1 {
-    font-size: 1.6rem;
-    margin-top: 35px;
-    letter-spacing: -0.3px;
-    line-height: 1.1;
+    font-size: 1.8rem; /* Tamanho mínimo seguro */
+    margin-top: 30px;
+    line-height: 1.2;
+    letter-spacing: normal;
   }
 
   .main-title {
-    font-size: 1.7rem;
-    margin-top: -3px;
+    font-size: 2rem;
+    margin-top: -4px;
   }
 
   .highlight {
-    font-size: 0.85rem;
-    margin: 8px 0;
-    padding: 0 10px;
+    font-size: 1rem; /* Mantido igual ao desktop */
+    margin: 12px 0;
+    line-height: 1.4;
   }
 
   .logo-container {
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    padding: 4px;
+    width: 80px; /* Tamanho aumentado */
+    height: 80px;
+    top: -40px;
+    padding: 6px;
   }
 
   .logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .links {
-    margin: 12px 0;
-    gap: 8px;
+    margin: 15px 0;
+    gap: 10px;
   }
 
   .link-btn {
-    padding: 8px 16px;
-    font-size: 0.85rem;
-    border-radius: 20px;
+    padding: 12px; /* Altura aumentada */
+    font-size: 1rem; /* Tamanho fixo legível */
+    min-height: 48px; /* Altura mínima de toque */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .branding {
-    margin-top: 12px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    margin-top: 18px;
   }
 
-  .branding hr {
-    width: 85%;
-    margin-bottom: 6px;
-  }
-
-  /* Ajuste especial para telas muito curtas */
-  @media (max-height: 600px) {
+  /* Ajuste de densidade para telas curtas */
+  @media (max-height: 640px) {
     body {
-      padding: 10px;
+      padding: 8px;
       align-items: flex-start;
     }
     
     .container {
-      margin-top: 30px;
+      margin-top: 25px;
+      padding: 15px 10px;
+    }
+    
+    .profile-header h1 {
+      margin-top: 25px;
+      font-size: 1.6rem;
+    }
+    
+    .link-btn {
+      padding: 10px;
     }
   }
 }
