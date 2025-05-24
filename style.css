@@ -114,3 +114,65 @@ hr {
 .branding p {
   margin: 0.5rem 0;
 }
+
+/* Adicione estas regras ao CSS existente */
+.profile-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.highlight p {
+  color: #4A7563;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.divider {
+  width: 80%;
+  height: 1px;
+  background: #E0E0E0;
+  margin: 1.5rem auto;
+}
+
+.stacked-list {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.stacked-item {
+  display: block;
+  padding: 1rem;
+  color: #2A5C45;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid #EEE;
+  transition: all 0.2s ease;
+}
+
+.stacked-item:hover {
+  background: #F8F8F8;
+  color: #FF6B35;
+}
+
+.institutional {
+  color: #666 !important;
+  font-weight: 500;
+  border-bottom: none;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+  
+  .highlight p {
+    font-size: 1rem;
+  }
+  
+  .stacked-item {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
