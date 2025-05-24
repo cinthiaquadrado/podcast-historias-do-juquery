@@ -138,3 +138,61 @@ body {
     height: 80px;
   }
 }
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px 25px;
+    margin-top: 50px; /* Reduz espaço para o logo */
+  }
+
+  .profile-header h1 {
+    font-size: 1.8rem;
+    margin-top: 40px; /* Ajuste fino de espaçamento */
+    line-height: 1.15;
+  }
+
+  .main-title {
+    font-size: 1.9rem;
+    margin-top: -5px;
+  }
+
+  .highlight {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+
+  .logo-container {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    padding: 5px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .links {
+    margin: 15px 0;
+    gap: 10px;
+    max-width: 100%; /* Aproveita melhor a largura */
+  }
+
+  .link-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-width: 1px;
+  }
+
+  .branding {
+    margin-top: 15px;
+    font-size: 0.8rem;
+  }
+
+  .branding hr {
+    width: 80%;
+    margin-bottom: 8px;
+  }
+}
