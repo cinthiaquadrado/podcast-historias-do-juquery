@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #363b22;
+  background-color: #dfe2d6;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   min-height: 100vh;
@@ -38,7 +38,6 @@ body {
   padding: 8px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 2px solid #353d25; /* Verde floresta */
 }
 
 .logo {
@@ -86,14 +85,14 @@ body {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
-  background-color: #353d25;
+  background-color: #4a7563;
   color: #ffffff;
   border: 2px solid #353d25;
   transition: all 0.3s ease;
 }
 
 .link-btn:hover {
-  background-color: #B36A5E; /* Terracota */
+  background-color: #346e55; /* Terracota */
   border-color: #B36A5E;
   color: #FFFFFF;
   transform: translateY(-2px);
