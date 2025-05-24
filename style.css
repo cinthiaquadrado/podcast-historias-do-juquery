@@ -117,38 +117,16 @@ body {
   width: 60%;
 }
 
+/*Resp */
 
-/* Ajuste final para telas muito pequenas (até 320px) */
-@media (max-width: 360px) {
+@media (max-width: 600px) {
   .container {
-    padding: 20px 12px 15px;
-    margin: 30px 0;
-    border-radius: 12px;
-  }
-
-  .profile-header h1 {
-    font-size: 1.8rem; /* Tamanho mínimo seguro */
-    margin-top: 30px;
-    line-height: 1.2;
-    letter-spacing: normal;
-  }
-
-  .main-title {
-    font-size: 2rem;
-    margin-top: -4px;
-  }
-
-  .highlight {
-    font-size: 1rem; /* Mantido igual ao desktop */
-    margin: 12px 0;
-    line-height: 1.4;
+    padding: 30px 20px 20px;
+    border-radius: 15px;
   }
 
   .logo-container {
-    width: 80px; /* Tamanho aumentado */
-    height: 80px;
-    top: -40px;
-    padding: 6px;
+    top: -50px;
   }
 
   .logo {
@@ -156,44 +134,35 @@ body {
     height: 80px;
   }
 
+  .profile-header h1 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .highlight {
+    font-size: 0.95rem;
+  }
+
   .links {
-    margin: 15px 0;
-    gap: 10px;
+    max-width: 100%;
+    gap: 12px;
   }
 
   .link-btn {
-    padding: 12px; /* Altura aumentada */
-    font-size: 1rem; /* Tamanho fixo legível */
-    min-height: 48px; /* Altura mínima de toque */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 18px;
+    font-size: 0.95rem;
   }
 
   .branding {
-    font-size: 0.85rem;
-    margin-top: 18px;
+    font-size: 0.8rem;
   }
 
-  /* Ajuste de densidade para telas curtas */
-  @media (max-height: 640px) {
-    body {
-      padding: 8px;
-      align-items: flex-start;
-    }
-    
-    .container {
-      margin-top: 25px;
-      padding: 15px 10px;
-    }
-    
-    .profile-header h1 {
-      margin-top: 25px;
-      font-size: 1.6rem;
-    }
-    
-    .link-btn {
-      padding: 10px;
-    }
+  .branding hr {
+    width: 80%;
   }
 }
+
