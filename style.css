@@ -16,18 +16,35 @@ body {
   width: 90%;
   max-width: 600px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-top: 70px; /* Espaço para o logo circular */
 }
 
-.logo {
+/* Estilos do logo circular */
+.logo-container {
   position: absolute;
-  top: -30px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 2px solid #4A7563;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .profile-header {
-  margin-bottom: 1.5rem;
+  margin: 30px 0 1.5rem 0;
 }
 
 h1 {
@@ -97,4 +114,26 @@ hr {
 
 .branding p {
   margin: 0.5rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .logo-container {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .container {
+    margin-top: 60px;
+    padding: 1.5rem;
+  }
 }
