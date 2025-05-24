@@ -6,17 +6,17 @@
 }
 
 body {
-  background-color: #e3e4db; /* mesmo tom do fundo do logo */
+  background-color: #E7D8C6; /* Bege natural suave */
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 40px 30px 30px;
@@ -28,16 +28,17 @@ body {
   align-items: center;
 }
 
-/* Ajuste do logo */
+/* Logo ajustado */
 .logo-container {
   position: absolute;
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #e3e4db;
+  background-color: #FFFFFF;
   padding: 8px;
-  border-radius: 25%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 2px solid #2A5C45; /* Verde floresta */
 }
 
 .logo {
@@ -47,28 +48,34 @@ body {
   object-fit: cover;
 }
 
-/* Título */
+/* Tipografia e cores */
 .profile-header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.3rem;
-  color: #666666; /* verde escuro */
-  margin-top: 60px; /* ajustado para menor distância após o logo */
+  color: #2A5C45; /* Verde floresta */
+  margin-top: 60px;
+  letter-spacing: -0.5px;
 }
 
 .main-title {
   font-size: 2.7rem;
-  color: #2e5a88; /* azul escuro suave */
+  color: #4A7563; /* Verde médio */
+  display: block;
+  margin-top: -8px;
 }
 
 .highlight {
-  margin-top: 15px;
+  margin: 15px 0;
   font-size: 1rem;
-  color: #4A7563;
+  color: #6B4F4A; /* Marrom envelhecido */
+  font-weight: 500;
 }
 
 /* Botões */
 .links {
   margin: 25px 0;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -79,40 +86,52 @@ body {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
-  background-color: #ffffff;
-  color: #3a3a3a;
-  border: 2px solid #c0d6d3;
+  background-color: #FFFFFF;
+  color: #2A5C45; /* Verde floresta */
+  border: 2px solid #2A5C45;
   transition: all 0.3s ease;
 }
 
-.link-btn:first-child {
-  background-color: #3a3a3a;
-  color: #fff;
-}
-
 .link-btn:hover {
-  background-color: ##4D4D4D;
-  border-color: #8bb8b5;
-  color: #1d3c34;
+  background-color: #B36A5E; /* Terracota */
+  border-color: #B36A5E;
+  color: #FFFFFF;
+  transform: translateY(-2px);
 }
 
-.link-btn:first-child:hover {
-  background-color: ##4D4D4D;
-  color: #fff;
-}
-
-/* Rodapé */
+/* Rodapé institucional */
 .branding {
-  margin-top: 20px;
-  color: #888;
+  margin-top: 25px;
+  color: #7E847F; /* Cinza pedra */
   font-size: 0.9rem;
+  width: 100%;
 }
 
 .branding hr {
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #E0E0E0;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+  
+  .main-title {
+    font-size: 2.2rem;
+  }
+  
+  .logo-container {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
 }
