@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f6f4f2;
+  background-color: #e3e4db; /* mesmo tom do fundo do logo */
   font-family: 'Roboto', sans-serif;
   text-align: center;
   height: 100vh;
@@ -16,95 +16,95 @@ body {
 }
 
 .container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 40px 30px 30px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
-  width: 90%;
-  padding-top: 80px; /* Reduzi o espaço */
-  position: relative;
 }
 
+/* Ajuste do logo */
 .logo-container {
   position: absolute;
-  top: 0;
+  top: -60px;
   left: 50%;
-  transform: translate(-50%, -40%);
-  background-color: #f6f4f2;
-  padding: 10px;
-  border-radius: 100px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transform: translateX(-50%);
+  background-color: #e3e4db;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
 
+/* Título */
 .profile-header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: #2d2d2d;
-  margin-top: 20px;
-}
-
-.title-line {
-  display: block;
+  font-size: 2.3rem;
+  color: #1d3c34; /* verde escuro */
+  margin-top: 60px; /* ajustado para menor distância após o logo */
 }
 
 .main-title {
-  font-size: 3rem;
-  color: #5b2a86;
+  font-size: 2.7rem;
+  color: #2e5a88; /* azul escuro suave */
 }
 
 .highlight {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 1rem;
-  color: #555;
+  color: #4a4a4a;
 }
 
+/* Botões */
 .links {
-  margin: 30px 0;
+  margin: 25px 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Botão principal com destaque */
-.link-btn:first-child {
-  background-color: #5b2a86;
-  color: #fff;
-  font-weight: 600;
-}
-
-/* Todos os botões com hover sutil */
 .link-btn {
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
   background-color: #ffffff;
-  color: #5b2a86;
-  border: 2px solid #ddd;
+  color: #2e5a88;
+  border: 2px solid #c0d6d3;
   transition: all 0.3s ease;
 }
 
-.link-btn:hover {
-  background-color: #f0f0f0;
-  border-color: #bbb;
-  color: #442060;
-}
-
-.link-btn:first-child:hover {
-  background-color: #442060;
+.link-btn:first-child {
+  background-color: #2e5a88;
   color: #fff;
 }
 
+.link-btn:hover {
+  background-color: #f0f4f2;
+  border-color: #8bb8b5;
+  color: #1d3c34;
+}
+
+.link-btn:first-child:hover {
+  background-color: #1d3c34;
+  color: #fff;
+}
+
+/* Rodapé */
 .branding {
   margin-top: 20px;
-  color: #999;
+  color: #888;
   font-size: 0.9rem;
 }
 
