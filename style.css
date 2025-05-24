@@ -52,14 +52,14 @@ body {
 .profile-header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.3rem;
-  color: #2A5C45; /* Verde floresta */
+  color: #2A5C45; 
   margin-top: 60px;
   letter-spacing: -0.5px;
 }
 
 .main-title {
   font-size: 2.7rem;
-  color: #4A7563; /* Verde médio */
+  color: #3a3a3a;
   display: block;
   margin-top: -8px;
 }
@@ -67,7 +67,7 @@ body {
 .highlight {
   margin: 15px 0;
   font-size: 1rem;
-  color: #6B4F4A; /* Marrom envelhecido */
+  color: #4a7563;
   font-weight: 500;
 }
 
