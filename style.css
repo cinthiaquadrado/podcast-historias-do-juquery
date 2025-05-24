@@ -88,7 +88,7 @@ body {
   background-color: #ffffff;
   color: #4a7563;
   border: 1px solid #4a7563;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   /* Novas propriedades para suavidade */
   opacity: 0.9;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
