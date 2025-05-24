@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background: #F8F8F8;
+  display: block; 
   justify-content: center;
   align-items: center;
   min-height: 100vh;
