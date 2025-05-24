@@ -138,61 +138,74 @@ body {
     height: 80px;
   }
 }
-
-/* Responsividade */
-@media (max-width: 480px) {
+/* Ajustes para dispositivos muito pequenos (até 360px) */
+@media (max-width: 360px) {
   .container {
-    padding: 30px 20px 25px;
-    margin-top: 50px; /* Reduz espaço para o logo */
+    padding: 25px 15px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
   }
 
   .profile-header h1 {
-    font-size: 1.8rem;
-    margin-top: 40px; /* Ajuste fino de espaçamento */
-    line-height: 1.15;
+    font-size: 1.6rem;
+    margin-top: 35px;
+    letter-spacing: -0.3px;
+    line-height: 1.1;
   }
 
   .main-title {
-    font-size: 1.9rem;
-    margin-top: -5px;
+    font-size: 1.7rem;
+    margin-top: -3px;
   }
 
   .highlight {
-    font-size: 0.9rem;
-    margin: 10px 0;
+    font-size: 0.85rem;
+    margin: 8px 0;
+    padding: 0 10px;
   }
 
   .logo-container {
-    width: 70px;
-    height: 70px;
-    top: -35px;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    padding: 4px;
   }
 
   .logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   .links {
-    margin: 15px 0;
-    gap: 10px;
-    max-width: 100%; /* Aproveita melhor a largura */
+    margin: 12px 0;
+    gap: 8px;
   }
 
   .link-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    border-width: 1px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    border-radius: 20px;
   }
 
   .branding {
-    margin-top: 15px;
-    font-size: 0.8rem;
+    margin-top: 12px;
+    font-size: 0.75rem;
   }
 
   .branding hr {
-    width: 80%;
-    margin-bottom: 8px;
+    width: 85%;
+    margin-bottom: 6px;
+  }
+
+  /* Ajuste especial para telas muito curtas */
+  @media (max-height: 600px) {
+    body {
+      padding: 10px;
+      align-items: flex-start;
+    }
+    
+    .container {
+      margin-top: 30px;
+    }
   }
 }
