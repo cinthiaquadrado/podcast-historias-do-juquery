@@ -38,7 +38,7 @@ body {
   padding: 8px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 2px solid #2A5C45; /* Verde floresta */
+  border: 2px solid #353d25; /* Verde floresta */
 }
 
 .logo {
@@ -86,9 +86,9 @@ body {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: 500;
-  background-color: #2A5C45;
+  background-color: #353d25;
   color: #ffffff;
-  border: 2px solid #2A5C45;
+  border: 2px solid #353d25;
   transition: all 0.3s ease;
 }
 
